@@ -168,13 +168,13 @@ cd mentor-vscode
 Install the project dependencies.
 
 ```bash
-npm install
+pnpm install
 ```
 
 Create a development build of the extension.
 
 ```bash
-npm run build:watch
+pnpm run build:watch
 ```
 
 ### Debugging
@@ -188,14 +188,14 @@ To start debugging the 'Launch Extension' configuration, follow these steps:
 
 This will start a new instance of Visual Studio Code with the Mentor extension loaded. You can set breakpoints in your code to stop execution and inspect variables, call stack, and so on.
 
-### Packaging 
+### Packaging
 ```bash
-npm install --global @vscode/vsce
+pnpm install --global @vscode/vsce
 ```
 
 Create a production build and install it into your local Visual Studio Code environment:
 ```bash
-npm run package:install
+pnpm run package:install
 ```
 
 # License

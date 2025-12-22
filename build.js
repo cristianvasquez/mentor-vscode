@@ -238,7 +238,8 @@ const copyVSCodeElementsBundle = () => {
       }
     }
   } catch (e) {
-    process.stderr.write(e.stderr);
+    const errorMessage = e.stderr || e.message || String(e);
+    process.stderr.write(errorMessage + '\n');
     process.exit(1);
   }
 })();
